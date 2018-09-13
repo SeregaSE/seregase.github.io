@@ -1,16 +1,17 @@
 :root {
-    --primary: #3F51B5;
+    --primary: #283593;
     --secondary: #5C6BC0;
-    --additional: #7986CB;
+    --additional: #3F51B5;
     --onPrimary: #FFF;
     --onSecondary: #FFF;
 }
 
 body {
     width: 100vw;
+    min-width: 1024px;
     height: 100vh;
     margin: 0;
-    font-family: "Verdana", sans-serif;
+    font-family: 'Source Code Pro', monospace;
 }
 
 .main {
@@ -20,12 +21,27 @@ body {
 }
 
 .section {
-    width: 50%;
     height: 100%;
     position: relative;
+    flex: 1 1 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: flex .6s;
+}
+
+.section:hover {
+    flex: 2 0 80%;
+}
+
+.section .preview {
+    opacity: 1;
+    transition: opacity .6s, transform .6s;
+}
+
+.section:hover .preview {
+    opacity: 0;
+    transform: scale(0);
 }
 
 .wave {
@@ -50,5 +66,6 @@ body {
 }
 
 .skills {
+    color: var(--onSecondary);
     background: linear-gradient(127deg, var(--secondary), var(--additional));
 }

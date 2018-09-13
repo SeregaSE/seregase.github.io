@@ -6,23 +6,28 @@
   <meta name="description" content="Profile page">
   <meta name="author" content="Sergeev Sergey">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="main">
     <section class="section personal">
-        <h1>Coming soon...</h1>
-        <svg class="wave" viewBox="0 0 65 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-          <filter id="blur-filter" x="-2" y="-2" width="65" height="500">
+        <h1 class="preview">Personal</h1>
+
+        <svg class="wave" viewBox="0 0 100 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <filter id="blur-filter" x="-2" y="-2" width="100" height="900">
             <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
           </filter>
-          <g id="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <path d="M0,0 L0,500 L45,500 C58.3333333,466.666667 65,416.666667 65,350 C65,250 30,225 30,150 C30,100 40,50 60,0 L0,0 Z" id="waveShadow"></path>
-              <path d="M0,0 L0,500 L45,500 C58.3333333,466.666667 65,416.666667 65,350 C65,250 30,225 30,150 C30,100 40,50 60,0 L0,0 Z" id="wavePath"></path>
+          <g  id="wave" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <path id="waveShadow" d="M0,0 L0,900 L60,900 C112.799479,779.635417 112.799479,679.635417 60,600 C-19.1992187,480.546875 3.4609375,436.429688 60,300 C97.6927083,209.046875 97.6927083,109.046875 60,0 L0,0 Z"></path>
+              <path id="wavePath" d="M0,0 L0,900 L60,900 C112.799479,779.635417 112.799479,679.635417 60,600 C-19.1992187,480.546875 3.4609375,436.429688 60,300 C97.6927083,209.046875 97.6927083,109.046875 60,0 L0,0 Z"></path>
           </g>
         </svg>
+
     </section>
-    <section class="section skills"></section>
+    <section class="section skills">
+      <h1 class="preview">Skills</h1>
+    </section>
   </main>
 </body>
 </html>
